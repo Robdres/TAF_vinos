@@ -5,11 +5,51 @@ from openai import OpenAI
 import tkinter as tk
 from tkinter import scrolledtext
 from dotenv import load_dotenv
+
+from cryptography.fernet import Fernet, InvalidToken
+import base64
+import hashlib
+from getpass import getpass
+
+import os
+
+# Remove the environment variable if it exists
+if "OPENAI_API_KEY" in os.environ:
+    del os.environ["OPENAI_API_KEY"]
+    print("🔒 Environment variable OPENAI_API_KEY removed.")
 load_dotenv()
+
+
+#Pedir verification si no hay un API KEY
+def generar_clave(password):
+    return base64.urlsafe_b64encode(hashlib.sha256(password.encode()).digest())
+def cargar_api_key():
+    password = getpass("🔐 Ingrese la passphrase para desbloquear la API key: ")
+    clave = generar_clave(password)
+    fernet = Fernet(clave)
+    try:
+        with open("api_key.enc", "rb") as f:
+            api_key_cifrada = f.read()
+        api_key = fernet.decrypt(api_key_cifrada).decode()
+        print("❌ Passphrase correct. ")
+        return api_key
+    except InvalidToken:
+        print("❌ Passphrase incorrecta. No se pudo descifrar la API key.")
+        return None
 
 # Cargar clave de API desde variable de entorno
 api_key = os.getenv("OPENAI_API_KEY")  # Guarda tu clave en el entorno o en .env
-client = OpenAI(api_key=api_key)
+key = ""
+
+if not api_key:
+    res = cargar_api_key()
+    if not res:
+        exit("Passphrase incorrecta")
+    key = res
+else:
+    key = api_key
+
+client = OpenAI(api_key=key)
 
 # Leer CSV de vinos
 df_vinos = pd.read_csv("vinos_ejemplo.csv")
