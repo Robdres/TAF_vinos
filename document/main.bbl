@@ -1,0 +1,125 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Adamopoulou%
+\ \BBA {} Moussiades%
+}{%
+Adamopoulou%
+\ \BBA {} Moussiades%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+adamopoulou2020overview}
+\APACinsertmetastar {%
+adamopoulou2020overview}%
+\begin{APACrefauthors}%
+Adamopoulou, E.%
+\BCBT {}\ \BBA {} Moussiades, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An overview of chatbot technology} {An overview of chatbot technology}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Artificial Intelligence Applications and Innovations}{}{}{373--383}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Brown%
+\ \protect \BOthers {.}}{%
+Brown%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+brown2020language}
+\APACinsertmetastar {%
+brown2020language}%
+\begin{APACrefauthors}%
+Brown, T\BPBI B.%
+, Mann, B.%
+, Ryder, N.%
+, Subbiah, M.%
+, Kaplan, J.%
+, Dhariwal, P.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Language Models are Few-Shot Learners} {Language models are few-shot learners}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Advances in Neural Information Processing Systems}{33}{}{1877--1901}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lundh%
+}{%
+Lundh%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+lundh2001python}
+\APACinsertmetastar {%
+lundh2001python}%
+\begin{APACrefauthors}%
+Lundh, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2001}.
+\newblock
+\APACrefbtitle {Python Standard Library} {Python standard library}.
+\newblock
+\APACaddressPublisher{}{O'Reilly Media}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shawar%
+\ \BBA {} Atwell%
+}{%
+Shawar%
+\ \BBA {} Atwell%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+shawar2007chatbots}
+\APACinsertmetastar {%
+shawar2007chatbots}%
+\begin{APACrefauthors}%
+Shawar, B\BPBI A.%
+\BCBT {}\ \BBA {} Atwell, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Chatbots: Are they really useful?} {Chatbots: Are they really useful?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{LDV Forum}{22}{1}{29--49}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+VinBot%
+}{%
+VinBot%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+vinbot2019}
+\APACinsertmetastar {%
+vinbot2019}%
+\begin{APACrefauthors}%
+VinBot, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {VinBot: A Wine Advisor Chatbot.} {Vinbot: A wine advisor chatbot.}
+\newblock
+\APACrefnote{Disponible en https://vinbot.example.com}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
