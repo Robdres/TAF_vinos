@@ -77,7 +77,6 @@ conversacion = [
 def hacer_pregunta(pregunta):
     if not pregunta.strip():
         return
-
     conversacion.append({"role": "user", "content": pregunta})
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -100,7 +99,7 @@ def run_program():
         chat.insert(tk.END, f"SommelierBot: {response}\n\n", "bot")
         chat.see(tk.END)
     ventana = tk.Tk()
-    ventana.title("SommelierBot 🍷")
+    ventana.title("SommelierBot")
     ventana.configure(bg="#f8f1e4")
     chat = scrolledtext.ScrolledText(ventana, wrap=tk.WORD, width=80, height=25, bg="#fffaf4", font=("Arial", 11))
     chat.tag_config("user", foreground="navy", font=("Arial", 11, "bold"))
