@@ -16,16 +16,19 @@ main.py
 python3 main.py
 ```
 Este programa usa la API de Copilot, por lo que se necesta un API key para correr.
-Para este caso agregue dentro de mi repostoriot mi API key, esta cifrado y antes del correr el programa
+Para este caso agregue dentro del repositorio mi API key, esta cifrado y antes del correr el programa
 le pedirá una contraseña, si la necesita para probarlo puede escribirme a
 raalvarado6@utpl.edu.ec. Este proyecto es para la universidad entonces le pasaré la
 contraseña a mi profesor para que pueda ver como funciona.
 
-Si alguién logra encontrar mi clave... pues :(, espero que no haha
-
-Ahora si quieres correr con tu propia API Key de OpenAI puedes hacerlo con
+Si buscas correr con tu propia API Key de OpenAI, puedes hacerlo
 creando un archivo .env dentro del mismo directorio del main.py, con esto
 no te pedirá una clave e utilizaré tu API key
+tiene que tener el archivo este formato
+
+```
+OPENAI_API_KEY="<api_open_ai-key>"
+```
 
 ## Algunas imágenes
 

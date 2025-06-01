@@ -128,6 +128,12 @@ La clave API se almacena en un archivo \texttt{.env}, nunca incluido en
 repositorios públicos. Se recomienda usar archivos \texttt{.gitignore} para
 evitar subir claves por error.
 
+Para que el programa para que pueda ser utilizado por el profesor, sin la necesidad
+de una APIKEY,
+cree una sistema de cifrado que codifica el api\_key con una clave que le enviaré personalmente
+para que pueda utilizarlo
+
+
 \section{Repositorio y Ejecución del Programa}
 
 El código fuente completo de este proyecto está disponible en el siguiente repositorio de GitHub:
@@ -140,8 +146,8 @@ El código fuente completo de este proyecto está disponible en el siguiente rep
 
 \begin{itemize}
     \item Python 3.9 o superior.
-    \item Una cuenta activa de OpenAI con acceso a la API.
-    \item Clave API de OpenAI (se debe almacenar en un archivo \texttt{.env}).
+    \item Una cuenta activa de OpenAI con acceso a la API, a menos de tener
+        la clave
 \end{itemize}
 
 \subsection{Instrucciones de instalación y ejecución}
@@ -159,36 +165,48 @@ cd TAF_vino
 pip install -r requirements.txt
     \end{verbatim}
 
+    \item Si quiere utilizar su propia OpenAI puede
+        create un .env file en el mismo archivo que tenga
+        como argumento
+    \begin{verbatim}
+OPENAI_API_KEY="<su-api-key>"
+    \end{verbatim}
+
     \item Ejecutar la aplicación principal con interfaz gráfica (Tkinter):
     \begin{verbatim}
 python main.py
     \end{verbatim}
+
 
     \item Ejecutar el modo de prueba automática:
     \begin{verbatim}
 python main.py --test
     \end{verbatim}
 
+    \item Si no tiene su propia key, se le pedirá una clave
+        ingresela y puede continuar
+
 \end{enumerate}
 \section{Resultados}
-Aqui podemos ver la interfaz y una pregunta
+En la figura 1 podemos ver la interfaz y una pregunta.
+En la figura 2 podemos ver que tiene el contexto de las anteriores preguntas
 \begin{figure}[htbp]
 \centerline{\includegraphics[width=0.48\textwidth]{./figures/2025-06-01-100101_701x537_scrot.png}}
 \caption{Captura de pantalla de la interfaz Tkinter del chatbot sommelier.}
 \label{fig:interfaz}
 \end{figure}
 
-Y aqui podemos ver que tiene el contexto de las anteriores preguntas
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=0.48\textwidth]{./figures/2025-06-01-100101_701x537_scrot.png}}
+\begin{figure}[ht]
+\centerline{\includegraphics[width=0.48\textwidth]{./figures/2025-06-01-100135_696x533_scrot.png}}
 \caption{Captura de pantalla de la interfaz Tkinter del chatbot sommelier.}
 \label{memory}
 \end{figure}
+
 Las pruebas automáticas mostraron respuestas coherentes y basadas en la base de
 datos, confirmando la correcta integración del modelo y el procesamiento del
 CSV.
 
-Para los resultado de testing, por favor ver el appendice con los resultados
+Para los resultado del testing, por favor ver el appendice con los resultados
 de las respuestas que validan que el chatbot esta funcionando
 
 \section{Conclusiones}
@@ -198,9 +216,7 @@ versión de la API de OpenAI con la clase \texttt{OpenAI}, integrando una base
 de datos en CSV y una interfaz gráfica con Tkinter. El sistema cuenta con un
 modo de pruebas automáticas para validar respuestas. Se documentaron buenas
 prácticas para la protección de la clave API y la organización para la
-publicación en GitHub. Este enfoque puede extenderse a otros dominios de
-conocimiento.
-
+publicación en GitHub.
 
 \section*{Apendice: Resultados del testing}
 - Test 1: ¿Qué vino va bien con carne de cerdo?

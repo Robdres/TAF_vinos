@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1748787647.4569 "main.aux" "main.bbl" "main" 1748788133.49654 0
+["bibtex main"] 1748790663.44429 "main.aux" "main.bbl" "main" 1748790909.77791 0
   "./referencias.bib" 1748756437.88168 1187 d4a9520fa0447a42e87e9a723502f9b2 ""
   "/usr/share/texmf-dist/bibtex/bst/apacite/apacite.bst" 1742685315 141073 9d7b79dbf9d91133318126032cff8c27 ""
-  "main.aux" 1748788133.27122 3723 97f6f1a9da19755e9318620872853ba5 "pdflatex"
+  "main.aux" 1748790909.57562 3723 52893c110949fcf3e3af96c12ce8c82c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1748788132.90719 "main.tex" "main.pdf" "main" 1748788133.49695 0
+["pdflatex"] 1748790909.17624 "main.tex" "main.pdf" "main" 1748790909.77823 0
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1742685315 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm" 1742685315 960 4ab65358b8406f30ef5496c8c096d22b ""
@@ -66,9 +66,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1746365741 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1746375631 2030632 8bacd40047e987bdc21e00dc8dd0ce4a ""
   "figures/2025-06-01-100101_701x537_scrot.png" 1748786460.9915 22817 68fa4c51aadc9039d7c5424079aa8f62 ""
-  "main.aux" 1748788133.27122 3723 97f6f1a9da19755e9318620872853ba5 "pdflatex"
-  "main.bbl" 1748787647.5406 2710 9344c2047d5f616f5eca69c0dd2b7646 "bibtex main"
-  "main.tex" 1748788132.14255 11131 ac388a13c5990efd829960f49d27791a ""
+  "figures/2025-06-01-100135_696x533_scrot.png" 1748786495.38047 42220 afafc9b939ccea734706ad780e7356d3 ""
+  "main.aux" 1748790909.57562 3723 52893c110949fcf3e3af96c12ce8c82c "pdflatex"
+  "main.bbl" 1748790663.51476 2710 9344c2047d5f616f5eca69c0dd2b7646 "bibtex main"
+  "main.tex" 1748790907.41272 11567 f838f28c74701ddca3c5e2b6b0d61936 ""
   (generated)
   "main.aux"
   "main.log"
