@@ -31,10 +31,10 @@ def cargar_api_key():
         with open("api_key.enc", "rb") as f:
             api_key_cifrada = f.read()
         api_key = fernet.decrypt(api_key_cifrada).decode()
-        print("❌ Passphrase correct. ")
+        print("Contraseña correcta ")
         return api_key
     except InvalidToken:
-        print("❌ Passphrase incorrecta. No se pudo descifrar la API key.")
+        print("Contraseña incorrecta. No se pudo descifrar la API key.")
         return None
 
 # Cargar clave de API desde variable de entorno
@@ -63,14 +63,12 @@ for _, row in df_vinos.iterrows():
         f"precio: ${row['precio_usd']:.2f} USD\n"
     )
 
-
 contexto = """Eres un sommelier experto en vinos. Si preguntan sobre alguna recomendación,
 intenta primero explicar de manera general en base a tu conocimiento de vinos,
 y después has una recomendación, por favor dame el vino en una sola linea con
 el precio, y el origen, junto a su año y el tipo de vua. Estos son los vinos
 que tengo en mi stock, si preguntan sobre recomendaciones utiliza este
 stock:""" + contexto
-
 
 conversacion = [
     {"role": "system", "content": contexto}
@@ -124,9 +122,9 @@ def run_tests():
         "¿Cuál recomiendas con pescado?"
     ]
     for i, pregunta in enumerate(preguntas, 1):
-        print(f"🧪 Test {i}: {pregunta}")
+        print(f" Test {i}: {pregunta}")
         respuesta = hacer_pregunta(pregunta)
-        print("🤖", respuesta)
+        print("", respuesta)
         print("-" * 50)
 
 # Modo principal
